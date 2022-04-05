@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 3</title>
+</head>
+<style>
+    .Formulario_Contacto {
+        width: 90%;
+        height: auto;
+        margin: 80px auto;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-color: #fbfbfb;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    span {
+        color: red;
+    }
+
+    input {
+        background-color: #fbfbfb;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        background-color: #fbfbfb;
+        width: 90%;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        padding-top: 15px;
+    }
+
+    button {
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: darkviolet;
+        border-color: darkviolet;
+        border-style: solid;
+        border-radius: 5px;
+        width: 95%;
+        cursor: pointer;
+        color: #fbfbfb;
+    }
+
+    .cuadro_logo {
+        background-color: blueviolet;
+        width: 100%;
+        height: auto;
+        margin: 80px auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: -150px;
+    }
+
+    * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .contenedor {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input {
+        width: 88%;
+    }
+</style>
+
+<body>
+    <div class="contenedor">
+        <form action="https://formsubmit.co/mati.bleach16@gmail.com" method="POST">
+            <div class="Formulario_Contacto">
+                <div class="cuadro_logo">
+                    <img src="imagenes/logomuni.png" width="100" height="80">
+                </div>
+                <h2>Escribe tu mensaje:</h2>
+
+                <p>
+                    <label for="nombre">Nombre Completo
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input class="input" type="text" name="nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="Contacto">Telefono de Contacto
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input class="input" type="text" name="Telefono_contact     o" id="Tcontacto" required="obligatorio"
+                        placeholder="Escribe tu numero de contacto">
+                </p>
+                <p>
+                    <label for="correo">Correo Electronico</label>
+                    <input class="input" type="text" name="mail" id="Celectronico" required="obligatorio"
+                        placeholder="Escribe tu correo electronico">
+                </p>
+                <p>
+                    <label for="Mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+                <p>
+                    <span class="obligatorio">*</span>Los campos son obligatorios
+                </p>
+                <p>
+                    <span class="obligatorio">Si ingresa su correo electrónico la respuesta será dirigida a
+                        ese medio, de otra forma será notificada a través de una
+                        llamada telefónica.
+                    </span>
+                </p>
+                <button type="submit" name="enviar form" id="enviarCorreo">
+                    <p>Enviar mensaje</p>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

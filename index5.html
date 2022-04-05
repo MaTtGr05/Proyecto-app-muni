@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Pagina 5</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .accordion {
+    background-color: rgb(191, 164, 245);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #444;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 90%;
+  }
+
+  .Formulario {
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+    position: relative;
+  }
+
+  a {
+    color: black;
+  }
+
+  .cuadro_logo {
+    background-color: blueviolet;
+    width: 89%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    margin-left: 30px;
+  }
+
+  span.glyphicon {
+    display: inline-block;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+  }
+
+  * {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .contenedor {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<body>
+  <div class="contenedor">
+    <div class="Formulario">
+      <div class="cuadro_logo">
+        <img src="imagenes/logomuni.png" width="100" height="80" />
+      </div>
+      <h3>Tramites Direccion de Obras.</h3>
+      <button class="accordion">
+        <h3>Solicitudes para obras menores</h3>
+      </button>
+      <div class="panel">
+        <a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a> <span class="glyphicon glyphicon-info-sign"
+          style="color:darkorange; font-size:20px;"></span>
+        <br>
+        <a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/01_Formulario_Estad%C3%ACsticas-INE.pdf">Estadisticas
+          INE</a> <span class="glyphicon glyphicon-info-sign" style="color:darkorange; font-size:20px;"></span>
+        <hr>
+        <h3>Solicitud obra menor</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-1.1.-Solicitud-Obra-Menor-Ampliacion-hasta-100-m2.pdf">Ampliacion
+          hasta 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-1.2.-Solicitud-Obra-Menor-Modificacion-edificaciones-existentes-que-no-alteren-su-estructura.pdf">Modificacion
+          edificaciones existentes que no alteren su estructiura</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-1.3.-Solicitud-Obra-Menor-Ampliacion-de-vivienda-social-y-otras..pdf">Ampliacion
+          de vivienda social y otras</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-1.4.-Solicitud-Obra-Menor-Regularizacion-edificacion-antigua-de-cualquier-destino-construida-antes-del-31-07-1959.pdf">Regularizacion
+          edificacion antigua de cualquier destino construida antes del 31-07-1959</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-1.5.-Solicitud-Obra-Menor-Proyectos-de-radicacion-inciso-2%C2%B0-6.2.9..pdf">Proyectos
+          de radiacion inciso 2°-6.2.9</a>
+        <hr>
+        <h3>Solicitud Modificacion Proyecto Obra Menor</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-3.1.-Solicitud-Modificacion-Proyecto-Obra-Menor-Ampliacion-hasta-100-m2.pdf">Ampliacion
+          hasta 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-3.2.-Solicitud-Modificacion-Proyecto-Obra-Menor-Ampliacion-vivienda-social-y-otras.pdf">Ampliacion
+          vivienda social y otras</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-3.3.-Solicitud-Modificacion-Proyecto-Obra-Menor-Proyectos-de-radicacion-inciso-2%C2%B0-6.2.9..pdf">Proyectos
+          de radicacion inciso 2°-6.2.9</a>
+        <hr>
+        <h3>Solicitud Recepcion Definitiva Obra Menor</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-5.1.-Solicitud-Recepcion-Definitiva-Obra-Menor-Ampliacion-hasta-100-m2.pdf">Ampliacion
+          hasta 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-1.2.-Solicitud-Obra-Menor-Modificacion-edificaciones-existentes-que-no-alteren-su-estructura.pdf">Modifiacion
+          edificaciones existentes que no añteren su estructura</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-5.3.-Solicitud-Recepcion-Definitiva-Obra-Menor-Ampliacion-vivienda-social-y-otras.pdf">Ampliacion
+          vivienda social y otras</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/1.%20Permisos%20de%20obra%20menor/1-5.4.-Solicitud-Recepcion-Definitiva-Obra-Menor-Proyectos-de-radicacion-inciso-2%C2%B0-2.6.9..pdf">Proyectos
+          de radicacion inciso 2°-2.6.9</a>
+        </table>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Subdivision, fusion, urbanizacion y loteo</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/3.%20Subdivision%2C%20fusion%2C%20urbanizacion%20y%20loteo/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/3.%20Subdivision%2C%20fusion%2C%20urbanizacion%20y%20loteo/3.1-S.A.L.pdf">S.A.L.(Solicitud
+          de aprobacion de anteproyecto de loteo)</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/3.%20Subdivision%2C%20fusion%2C%20urbanizacion%20y%20loteo/3.3-S.U..pdf">S.U.(Solicitud
+          de aprobacion de:)</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/3.%20Subdivision%2C%20fusion%2C%20urbanizacion%20y%20loteo/3.6-S.M.P.L.pdf">S.M.P.L.(Solicitud
+          de modificacion de proyecto)</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/3.%20Subdivision%2C%20fusion%2C%20urbanizacion%20y%20loteo/3.8-S.G.U.pdf">S.G.U.(Solicitud
+          de garantia de obras de urbanizacion)</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px" alt=""><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/3.%20Subdivision%2C%20fusion%2C%20urbanizacion%20y%20loteo/3.10-S.R.D.U.pdf">S.R.D.U.(Solicitud
+          de recepcion definitiva de obras de urbaniazacion)</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Encuesta edificacion INE</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/4.%20Encuesta%20edificacion%20INE/01_Formulario_Estad%C3%ACsticas-INE.pdf">Estadisticas
+          INE</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/4.%20Encuesta%20edificacion%20INE/form-regularizacion-Viviendas-acogidas-a-ley-20251.pdf">Regularizacion
+          viviendas acogidas a ley 20.251</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Permisos de instalacion de torres de soporte</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/5.%20formularios%20de%20permisos%20de%20instaacion%20de%20torres%20soporte/Formulario-11-1-21-02-2014.pdf">Formulario
+          11.1 21-02-2014</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/5.%20formularios%20de%20permisos%20de%20instaacion%20de%20torres%20soporte/Formulario-11-3-21-02-2014.pdf">Formulario
+          11.3 21-02-2014</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Regularizacion Ley N.°20.898</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/6.%20Formulario%20regularizacion%20Ley%20N%C2%B020.898/12.1-sol-tit-I-art-1%C2%B0_-Ley-N%C2%B0-20898_-vigencia-prorrogada-Ley-N%C2%B0-21141.pdf">Solicitud
+          regularizacion hasta 90m². Ley 20.898 vigencia prorrogada Ley N.°21.141</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/6.%20Formulario%20regularizacion%20Ley%20N%C2%B020.898/Formulario-12.4-Solicitud-regularizacion-vivienda-hasta-140-m2-Ley-20.898-y-modificaciones.pdf">Solicitud
+          regularizacion vivienda hasta 140m². Ley 20.898 y modificaciones</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Regularizacion Ley N.°20.301 y Ley N.°21.052</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/7.%20Formularios%20de%20regularizacion%20Ley%20N%C2%B020.301%20y%20Ley%20N%C2%B021.052/13.1.-Solicitud-Ley-N-21.031.pdf">Solicitud
+          Ley N.°21.031</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/7.%20Formularios%20de%20regularizacion%20Ley%20N%C2%B020.301%20y%20Ley%20N%C2%B021.052/13.3.-Solicitud-Ley-N-21.052_226103823546905828.pdf">Solicitud
+          Ley N.°21.052</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Demolicion y obras preliminares</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/8.%20Demolicion%20y%20obras%20preliminares/5.8-S.O.P.D.pdf">S.O.P.D.</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Otros tramites y certificados</h3>
+      </button>
+      <div class="panel">
+        <hr>
+        <h3>Afectacion a utilidad publica y numero</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/9.%20Certificados%20varios/AFECTACION%20A%20UTILIDAD%20PUBLICA%20Y%20NUMERO/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/9.%20Certificados%20varios/AFECTACION%20A%20UTILIDAD%20PUBLICA%20Y%20NUMERO/5.3-S.C.U.P.pdf">5.3
+          - S.C.U.P.</a>
+        <hr>
+        <h3>Certificado de ruralidad</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/9.%20Certificados%20varios/CERTIFICADO%20DE%20RURALIDAD/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a>
+        <hr>
+        <h3>Certificado de zonificacion</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/9.%20Certificados%20varios/CERTIFICADO%20DE%20ZONIFICACION/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a>
+        <hr>
+        <h3>Informaciones previas</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/9.%20Certificados%20varios/INFORMACIONES%20PREVIAS/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Solicitudes%20de%20obras/9.%20Certificados%20varios/INFORMACIONES%20PREVIAS/5.1-S.C.I.P.pdf">5.1
+          - S.C.I.P.</a>
+      </div>
+      <br>
+      <button class="accordion">
+        <h3>Permiso de edificacion</h3>
+      </button>
+      <div class="panel">
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/Plantilla%20TRAMITES.pdf">Informacion
+          sobre tramites</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/01_Formulario_Estad%C3%ACsticas-INE.pdf">Estadisticas
+          INE</a>
+        <hr>
+        <h3>Solicitud: Aprobacion de anteproyecto de obras de edificacion</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-1.1..pdf">Obra
+          nueva</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-1.2..pdf">Ampliacion
+          mayor a 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-1.3..pdf">Alteracion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-1.4..pdf">Reconstruccion</a>
+        <hr>
+        <h3>Solicitud: Permiso de edificacion</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-3.1.f.pdf">Obra
+          nueva</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-3.2.f.pdf">Ampliacion
+          mayor a 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-3.3..pdf">Alteracion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-3.4..pdf">Reconstruccion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-3.5..pdf">Reparacion</a>
+        <hr>
+        <h3>Solicitud: Modificacion de proyecto de edificacion</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-5.1..pdf">Obra
+          nueva</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-5.2.pdf">Ampliacion
+          mayor a 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-5.3..pdf">Alteracion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-5.4..pdf">Reconstruccion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-5.5..pdf">Reparacion</a>
+        <hr>
+        <h3>Solicitud: Recepcion definitiva de obras de edificacion</h3>
+        <hr>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-7.1..pdf">Obra
+          nueva</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-7.2..pdf">Ampliacion
+          mayor de 100m²</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-7.3..pdf">Alteracion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-7.4.-1.pdf">Reconstruccion</a>
+        <br>
+        <br>
+        <img src="imagenes/iconoPDF.png" width="35px" height="35px"><a style="text-decoration: none;"
+          href="https://www.municipalidadgorbea.cl/transparencia/images/ArchivosHOME/DOM/Permisos%20de%20edificaci%C3%B3n/FORMULARIO-2-7.5.-1.pdf">Reparacion</a>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
