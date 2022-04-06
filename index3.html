@@ -2,142 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina 3</title>
-</head>
-<style>
-    .Formulario_Contacto {
-        width: 90%;
-        height: auto;
-        margin: 80px auto;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        background-color: #fbfbfb;
-        padding-left: 30px;
-        position: relative;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
+  <title>Pagina 4</title>
+  <style>
+    .accordion {
+      background-color: rgb(191, 164, 245);
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
     }
 
-    span {
-        color: red;
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
     }
 
-    input {
-        background-color: #fbfbfb;
-        width: 408px;
-        height: 40px;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 1px;
-        margin-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 20px;
+    .accordion:after {
+      content: '\002B';
+      color: #444;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
     }
 
-    textarea {
-        background-color: #fbfbfb;
-        width: 90%;
-        height: 150px;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 1px;
-        padding-top: 15px;
+    .active:after {
+      content: "\2212";
     }
 
-    button {
-        height: 45px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        text-transform: uppercase;
-        background-color: darkviolet;
-        border-color: darkviolet;
-        border-style: solid;
-        border-radius: 5px;
-        width: 95%;
-        cursor: pointer;
-        color: #fbfbfb;
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .Formulario {
+
+      width: 100%;
+      height: auto;
+      margin: 80px auto;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      background-color: #fbfbfb;
+      position: relative;
     }
 
     .cuadro_logo {
-        background-color: blueviolet;
-        width: 100%;
-        height: auto;
-        margin: 80px auto;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        top: -150px;
+      background-color: blueviolet;
+      width: 100%;
+      height: auto;
+      margin: 80px auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: -120px;
     }
 
     * {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .contenedor {
-        width: 100%;
-        height: 100%;
+      width: 80%;
+      height: 80%;
+      margin-left: 60px;
     }
-
-    .input {
-        width: 88%;
-    }
-</style>
+  </style>
+</head>
 
 <body>
-    <div class="contenedor">
-        <form action="https://formsubmit.co/mati.bleach16@gmail.com" method="POST">
-            <div class="Formulario_Contacto">
-                <div class="cuadro_logo">
-                    <img src="imagenes/logomuni.png" width="100" height="80">
-                </div>
-                <h2>Escribe tu mensaje:</h2>
+  <div class="contenedor">
+    <div class="Formulario">
+      <div class="cuadro_logo">
+        <img src="imagenes/logomuni.png" width="100" height="80">
+      </div>
+      <h3>Conoce los programas municipales</h3>
+      <button class="accordion">Programa Cultura</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/EN9BTzchRSs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
-                <p>
-                    <label for="nombre">Nombre Completo
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input class="input" type="text" name="nombre" id="nombre" required="obligatorio"
-                        placeholder="Escribe tu nombre">
-                </p>
-                <p>
-                    <label for="Contacto">Telefono de Contacto
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input class="input" type="text" name="Telefono_contact     o" id="Tcontacto" required="obligatorio"
-                        placeholder="Escribe tu numero de contacto">
-                </p>
-                <p>
-                    <label for="correo">Correo Electronico</label>
-                    <input class="input" type="text" name="mail" id="Celectronico" required="obligatorio"
-                        placeholder="Escribe tu correo electronico">
-                </p>
-                <p>
-                    <label for="Mensaje">Mensaje
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <textarea name="mensaje" id="mensaje" required="obligatorio"
-                        placeholder="Deja aquí tu comentario..."></textarea>
-                </p>
-                <p>
-                    <span class="obligatorio">*</span>Los campos son obligatorios
-                </p>
-                <p>
-                    <span class="obligatorio">Si ingresa su correo electrónico la respuesta será dirigida a
-                        ese medio, de otra forma será notificada a través de una
-                        llamada telefónica.
-                    </span>
-                </p>
-                <button type="submit" name="enviar form" id="enviarCorreo">
-                    <p>Enviar mensaje</p>
-                </button>
-            </div>
-        </form>
+      <button class="accordion">Programa Seguridades y Oportunidades</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/u06kuFFYFuE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Programa Registro Social de Hogares</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1esHkm0viQs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Programa Chile Crece</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/RkItHCgsW68" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Programa Discapacidad</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/pxqwWt6Yumc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Programa EDLI</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qfdu54ZE5SE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Programa OMIL</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/U1XP0nHWHgA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Programa Turismo</button>
+      <div class="panel">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/GcXrQ-Zud2c" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </div>
 </body>
 
 </html>

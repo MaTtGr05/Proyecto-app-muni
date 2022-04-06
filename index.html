@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.json">
+
+  <title>Pagina 2</title>
+  <style>
+    .Formulario {
+
+      width: 100%;
+      height: 650px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      background-color: #fbfbfb;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    .cuadro_tramites {
+      width: 100%;
+      height: 500px;
+      background-color: blueviolet;
+      color: #fbfbfb;
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow-x: auto;
+      display: flex;
+    }
+
+    .cuadro-scroll {
+      max-height: 300px;
+      width: 1400px;
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .cuadro-permiso-circulacion {
+      height: 290px;
+      background-color: aliceblue;
+      box-sizing: border-box;
+      width: 350px;
+      padding: 5px;
+      margin: 0px auto;
+      border-radius: 10px;
+      text-align: center;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-top: auto;
+    }
+
+    .boton2 {
+      width: 300px;
+      height: 30px;
+      background-color: crimson;
+      color: aliceblue;
+      margin-top: 50px;
+      border-radius: 5px;
+    }
+
+    .label1 {
+      color: black;
+    }
+
+    .btnEventos {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: blueviolet;
+      position: absolute;
+      top: 10px;
+      left: -55px;
+    }
+
+    .btnSolicitarInfo {
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: blueviolet;
+      position: absolute;
+      top: 10px;
+      left: 35px;
+    }
+
+    .btnAudiencia {
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: blueviolet;
+      position: absolute;
+      top: 10px;
+      left: 130px;
+    }
+
+    .btnConocelosP {
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: blueviolet;
+      position: absolute;
+      top: 10px;
+      left: 230px;
+    }
+
+    .circulos {
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      position: absolute;
+      top: 500px;
+    }
+
+    .cuadro_directo {
+      position: absolute;
+      top: 800px;
+      width: 100%;
+    }
+
+    .p_envivo {
+      float: right;
+    }
+
+    .cuadrado1 {
+      background: blue;
+      position: absolute;
+      border-radius: 4px;
+      width: 90%;
+      height: 30px;
+      top: 10px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      z-index: 2;
+    }
+
+    .cuadrado2 {
+      background: dodgerblue;
+      position: absolute;
+      border-radius: 4px;
+      color: aliceblue;
+      width: 90%;
+      height: 30px;
+      top: 50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      z-index: 2;
+    }
+
+    .label2 {
+      color: #fbfbfb;
+    }
+
+    .bienvenidx {
+      margin-left: 20px;
+    }
+
+    .tramitx {
+      margin-left: 20px;
+    }
+
+    .botones_fixed {
+      position: fixed;
+      width: 100%;
+      min-height: 100px;
+      background-color: #fbfbfb;
+      top: 70%;
+      left: 5%;
+    }
+
+    .cuadro_logo {
+      background-color: blueviolet;
+      width: 96%;
+      height: auto;
+      text-align: center;
+      position: fixed;
+      z-index: 2;
+    }
+    .linea{
+      border-radius: 50%;
+      background-color: blueviolet;
+      width: 50px;
+      height: 50px;
+      margin-right: 30px;
+    }
+    .i_Eventos{
+      width: 30px;
+      height: 30px;
+    }
+    .i_solicitar_info{
+      width: 30px;
+      height: 30px;
+    }
+    .i_solicitar_audiencia{
+      width: 30px;
+      height: 30px;
+    }
+    .i_conoce_losP{
+      width: 30px;
+      height: 30px;
+    }
+
+    * {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .contenedor_tramites {
+      width: auto;
+      height: auto;
+      margin-top: 100px;
+    }
+
+    .botones_espacio {
+      width: 350px;
+      height: 140px;
+      background-color: #fbfbfb;
+    }
+
+    .contenedor {
+      width: 100%;
+      height: 100%;
+    }
+    .tabla{
+      width: 100%;
+    }
+  </style>
+</head>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('worker.js?' + Math.random() + '')
+    });
+  }
+</script>
+
+<body>
+  <div class="contenedor">
+    <div class="Formulario" id="Formulario">
+      <div class="cuadro_tramites">
+        <div class="cuadro_logo" id="cuadro_logo">
+          <img src="imagenes/logomuni.png" width="100" height="80">
+        </div>
+        <div class="contenedor_tramites">
+          <h3 class="bienvenidx">Bienvenid@</h3>
+          <h4 class="tramitx">Selecciona el tramite que deseas:</h4>
+          <div class="cuadro-scroll">
+            <div class="cuadro-permiso-circulacion">
+              <form action="https://home.municipalidadgorbea.cl/archivos/3118">
+                <label class="label1" for="Permiso-circulacion">Permiso de circulacion</label>
+                <hr>
+                <img class="i_pcirculacion" src="imagenes/coche.png" width="150px" height="150px">
+                <button class="boton2" type="submit" value="Pagar aqui">Pagar aqui</button>
+              </form>
+            </div>
+            <div class="cuadro-permiso-circulacion">
+              <form action="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">
+                <label class="label1" for="Permiso-circulacion">Pago derechos de aseo</label>
+                <hr>
+                <img class="i_pago_derechos_aseo" src="imagenes/envase.png" width="150px" height="150px">
+                <button class="boton2" type="submit" value="pagar aqui">Pagar aqui</button>
+              </form>
+            </div>
+            <div class="cuadro-permiso-circulacion">
+              <form action="http://localhost:5500/tramitesDOM">
+                <label class="label1" for="Permiso-circulacion">Tramites departamentos de obras</label>
+                <hr>
+                <img class="i_Tramites_DOM" src="imagenes/en-construccion.png" width="150px" height="150px">
+                <button class="boton2" type="submit" value="pagar aqui">Revisar aqui</button>
+              </form>
+            </div>
+            <div class="cuadro-permiso-circulacion">
+              <form action="https://rsh.ministeriodesarrollosocial.gob.cl/portada">
+                <label class="label1" for="Permiso-circulacion">Registro social de hogares</label>
+                <hr>
+                <img class="i_Registro_SH" src="imagenes/familia.png" width="150px" height="150px">
+                <button class="boton2" type="submit" value="pagar aqui">Revisar aqui</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="circulos">
+        <table class="tabla">
+          <tr>
+            <td><a href="http://localhost:5500/Eventos"><button class="linea"><img class="i_Eventos" src="imagenes/calendario.png"></button></a>
+            </td>
+            <td><a href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=e1c4b38162d39"><button class="linea"><img class="i_solicitar_info" src="imagenes/informacion.png"></button></a>
+            </td>
+            <td><a href="https://www.leylobby.gob.cl/instituciones/MU099"><button class="linea"><img class="i_solicitar_audiencia" src="imagenes/hacer-clic.png"></button></a>
+            </td>
+            <td><a href="http://127.0.0.1:5500/index4.html"><button class="linea"><img class="i_conoce_losP" src="imagenes/usuario.png"></button></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="parrafo">Eventos</p>
+            </td>
+            <td>
+              <p class="parrafo">Solicitar informacion</p>
+            </td>
+            <td>
+              <p class="parrafo">Solicitar audiencia</p>
+            </td>
+            <td>
+              <p class="parrafo">Conoce los progrmas</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cuadro_directo">
+        <h3>Gorbea en vivo:</h3>
+        <h4>
+          <p class="p_envivo">En vivo ahora 🔴</p>
+        </h4>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/ceqgwo7U28Y" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="botones_espacio">
+        </div>
+      </div>
+
+      <div class="botones_fixed">
+        <button class="cuadrado1">
+          <a class="label2" href="tel:452972000">Llamanos</a>
+        </button>
+        <form action="http://127.0.0.1:5500/index3.html">
+          <button class="cuadrado2">
+            Envianos un mensaje
+          </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
