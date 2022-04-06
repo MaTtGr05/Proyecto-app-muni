@@ -20,4 +20,4 @@ $asunto = 'Mensaje de '+$name;
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:index2.html");
+header("Location:index.html");
