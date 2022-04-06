@@ -133,11 +133,10 @@
 
     .cuadrado1 {
       background: blue;
-      position: absolute;
+      position: fixed;
       border-radius: 4px;
-      width: 90%;
+      width: 95%;
       height: 30px;
-      top: 10px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       z-index: 2;
       top: 85%;
@@ -146,12 +145,11 @@
 
     .cuadrado2 {
       background: dodgerblue;
-      position: absolute;
+      position: fixed;
       border-radius: 4px;
       color: aliceblue;
-      width: 90%;
+      width: 95%;
       height: 30px;
-      top: 50px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       z-index: 2;
       top: 90%;
@@ -192,6 +190,7 @@
       width: 50px;
       height: 50px;
       margin-right: 30px;
+      margin-left: 5px;
     }
     .i_Eventos{
       width: 30px;
@@ -233,8 +232,17 @@
     .tabla{
       width: 100%;
     }
-    .parrafo{
-      margin-right:20px;
+    .parrafo1{
+      margin-right: 20px;
+    }
+    .parrafo2{
+      margin-right: 20px;
+    }
+    .parrafo3{
+      margin-right: 20px;
+    }
+    .parrafo4{
+      margin-right: 20px;
     }
   </style>
 </head>
@@ -307,16 +315,16 @@
           </tr>
           <tr>
             <td>
-              <p class="parrafo">Eventos</p>
+              <p class="parrafo1">Eventos</p>
             </td>
             <td>
-              <p class="parrafo">Solicitar informacion</p>
+              <p class="parrafo2">Solicitar informacion</p>
             </td>
             <td>
-              <p class="parrafo">Solicitar audiencia</p>
+              <p class="parrafo3">Solicitar audiencia</p>
             </td>
             <td>
-              <p class="parrafo">Conoce los progrmas</p>
+              <p class="parrafo4">Conoce los progrmas</p>
             </td>
           </tr>
         </table>
@@ -332,7 +340,7 @@
           allowfullscreen></iframe>
         <div class="botones_espacio">
         </div>
-        <a href="tel:452972000"><button cuadrado1>Llamanos</button></a>
+        <a href="tel:452972000"><button class="cuadrado1">Llamanos</button></a>
         <a href="https://mattgr05.github.io/Proyecto-app-muni/index2.html"><button class="cuadrado2">Envianos unmensaje</button></a>
       </div>
     </div>
