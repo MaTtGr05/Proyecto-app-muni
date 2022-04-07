@@ -11,7 +11,7 @@
 <style>
   .accordion {
     background-color: rgb(191, 164, 245);
-    color: #444;
+    color:#444;
     padding: 18px;
     width: 95%;
     border: none;
@@ -26,7 +26,14 @@
   .accordion:hover {
     background-color: #ccc;
   }
-  
+
+  .accordion:after{
+    content: '\002B';
+    color:#444;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
 
   .active:after {
     content: "\2212";
