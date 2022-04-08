@@ -18,6 +18,15 @@ $message .= "Enviado el: " . date('d/m/Y', time());
 $para = 'mati.bleach16@gmail.com';
 $asunto = 'Correo de prueba';
 
+if(mail($name,$mail,$phone,$message))
+{
+    echo"Correo enviado";
+}
+else
+{
+    "Error al enviar";
+}
+
 mail($para, $asunto, utf8_decode($message), $header);
 
 header("Location:index.html");
