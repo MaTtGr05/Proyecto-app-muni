@@ -20,7 +20,7 @@ $asunto = 'Correo de prueba';
 
 if(mail($name,$mail,$phone,$message))
 {
-    echo"Correo enviado";
+    echo"Mensaje enviado exitosamente";
 }
 else
 {
