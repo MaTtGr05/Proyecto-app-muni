@@ -55,11 +55,14 @@
 
     .boton2 {
       width: 300px;
-      height: 30px;
+      height: 15px;
       background-color: crimson;
       color: aliceblue;
       margin-top: 50px;
       border-radius: 5px;
+      display: inline-block;
+      padding: 10px 0px;
+      text-decoration: none;
     }
 
     .label1 {
@@ -135,11 +138,14 @@
       background: blue;
       border-radius: 4px;
       width: 95%;
-      height: 30px;
+      height: 15px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       z-index: 2;
       color: #fbfbfb;
       margin-bottom: 10px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 0px;
     }
 
     .cuadrado2 {
@@ -147,9 +153,12 @@
       border-radius: 4px;
       color: aliceblue;
       width: 95%;
-      height: 30px;
+      height: 15px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       z-index: 2;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 0px;
     }
 
     .label2 {
@@ -188,24 +197,28 @@
       height: 50px;
       margin-right: 30px;
       margin-left: 5px;
+      display: inline-block;
     }
     .i_Eventos{
       width: 30px;
       height: 30px;
+      margin-top: 7px;
     }
     .i_solicitar_info{
       width: 30px;
       height: 30px;
+      margin-top: 7px;
     }
     .i_solicitar_audiencia{
       width: 30px;
       height: 30px;
+      margin-top: 7px;
     }
     .i_conoce_losP{
       width: 30px;
       height: 30px;
+      margin-top: 7px;
     }
-
     * {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
@@ -273,36 +286,28 @@
           <h4 class="tramitx">Selecciona el trámite que deseas:</h4>
           <div class="cuadro-scroll">
             <div class="cuadro-permiso-circulacion">
-              <form action="https://home.municipalidadgorbea.cl/archivos/3118">
                 <label class="label1" for="Permiso-circulacion">Permiso de circulacion</label>
                 <hr>
                 <img class="i_pcirculacion" src="imagenes/coche.png" width="150px" height="150px">
-                <button class="boton2" type="submit" value="Pagar aqui">Pagar aqui</button>
-              </form>
+                <a class="boton2" href="https://home.municipalidadgorbea.cl/archivos/3118">Pagar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
-              <form action="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">
                 <label class="label1" for="Permiso-circulacion">Pago derechos de aseo</label>
                 <hr>
                 <img class="i_pago_derechos_aseo" src="imagenes/envase.png" width="150px" height="150px">
-                <button class="boton2" type="submit" value="pagar aqui">Pagar aqui</button>
-              </form>
+                <a class="boton2" href="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">Pagar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
-              <form action="https://mattgr05.github.io/Proyecto-app-muni/index4.html">
                 <label class="label1" for="Permiso-circulacion">Tramites departamentos de obras</label>
                 <hr>
                 <img class="i_Tramites_DOM" src="imagenes/en-construccion.png" width="150px" height="150px">
-                <button class="boton2" type="submit" value="pagar aqui">Revisar aqui</button>
-              </form>
+                <a class="boton2" href="https://mattgr05.github.io/Proyecto-app-muni/index4.html">Revisar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
-              <form action="https://rsh.ministeriodesarrollosocial.gob.cl/portada">
                 <label class="label1" for="Permiso-circulacion">Registro social de hogares</label>
                 <hr>
                 <img class="i_Registro_SH" src="imagenes/familia.png" width="150px" height="150px">
-                <button class="boton2" type="submit" value="pagar aqui">Revisar aqui</button>
-              </form>
+                <a class="boton2" href="https://rsh.ministeriodesarrollosocial.gob.cl/portada">Revisar aqui</a>
             </div>
           </div>
         </div>
@@ -311,14 +316,10 @@
       <div class="circulos">
         <table class="tabla">
           <tr>
-            <td><a href="https://mattgr05.github.io/Proyecto-app-muni/index5.html"><button class="boton"><img class="i_Eventos" src="imagenes/calendario.png"></button></a>
-            </td>
-            <td><a href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=e1c4b38162d39"><button class="boton"><img class="i_solicitar_info" src="imagenes/informacion.png"></button></a>
-            </td>
-            <td><a href="https://www.leylobby.gob.cl/instituciones/MU099"><button class="boton"><img class="i_solicitar_audiencia" src="imagenes/hacer-clic.png"></button></a>
-            </td>
-            <td><a href="https://mattgr05.github.io/Proyecto-app-muni/index3.html"><button class="boton"><img class="i_conoce_losP" src="imagenes/usuario.png"></button></a>
-            </td>
+            <td><a class="boton" href="https://mattgr05.github.io/Proyecto-app-muni/index5.html"><img class="i_Eventos" src="imagenes/calendario.png"></a></td>
+            <td><a class="boton" href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=e1c4b38162d39"><img class="i_solicitar_info" src="imagenes/informacion.png"></a></td>
+            <td><a class="boton" href="https://www.leylobby.gob.cl/instituciones/MU099"><img class="i_solicitar_audiencia" src="imagenes/hacer-clic.png"></a></td>
+            <td><a class="boton" href="https://mattgr05.github.io/Proyecto-app-muni/index3.html"><img class="i_conoce_losP" src="imagenes/usuario.png"></a></td>
           </tr>
           <tr>
             <td>
@@ -348,8 +349,8 @@
         <div class="botones_espacio">
         </div>
         <div class="footer">
-          <a href="tel:452972000"><button class="cuadrado1">Llámanos</button></a>
-          <a href="https://mattgr05.github.io/Proyecto-app-muni/index2.html"><button class="cuadrado2">Envíanos un mensaje</button></a>
+          <a class="cuadrado1" href="tel:452972000">Llámanos</a>
+          <a class="cuadrado2" href="https://mattgr05.github.io/Proyecto-app-muni/index2.html">Envíanos un mensaje</a>
         </div>  
       </div>
     </div>
