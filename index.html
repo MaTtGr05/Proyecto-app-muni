@@ -133,26 +133,23 @@
 
     .cuadrado1 {
       background: blue;
-      position: fixed;
       border-radius: 4px;
       width: 95%;
       height: 30px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       z-index: 2;
-      top: 90%;
       color: #fbfbfb;
+      margin-bottom: 10px;
     }
 
     .cuadrado2 {
       background: dodgerblue;
-      position: fixed;
       border-radius: 4px;
       color: aliceblue;
       width: 95%;
       height: 30px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       z-index: 2;
-      top: 95%;
     }
 
     .label2 {
@@ -243,6 +240,15 @@
     }
     .parrafo4{
       margin-right: 20px;
+    }
+    .footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:#fbfbfb;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
@@ -340,8 +346,10 @@
           allowfullscreen></iframe>
         <div class="botones_espacio">
         </div>
-        <a href="tel:452972000"><button class="cuadrado1">Llámanos</button></a>
-        <a href="https://mattgr05.github.io/Proyecto-app-muni/index2.html"><button class="cuadrado2">Envíanos un mensaje</button></a>
+        <div class="footer">
+          <a href="tel:452972000"><button class="cuadrado1">Llámanos</button></a>
+          <a href="https://mattgr05.github.io/Proyecto-app-muni/index2.html"><button class="cuadrado2">Envíanos un mensaje</button></a>
+        </div>  
       </div>
     </div>
   </div>
