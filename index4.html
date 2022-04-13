@@ -21,6 +21,16 @@
     transition: 0.4s;
     border-radius: 5px;
   }
+  .accordion:after {
+      content: '\002B';
+      color: #444;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    .active:after{
+      content: '\2212';
+    }
 
   .panel {
     padding: 0 18px;
