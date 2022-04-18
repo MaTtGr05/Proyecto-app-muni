@@ -55,7 +55,7 @@
       margin-left: 10px;
     }
 
-    .boton2 {
+    .boton_rojo {
       width: 240px;
       height: 15px;
       background-color:#DB3069;
@@ -124,6 +124,13 @@
       text-align: center;
       position: absolute;
       top: 500px;
+    }
+    .contenedor_parrafos{
+      width: 100%;
+      height: 80px;
+      text-align: center;
+      position: absolute;
+      top: 568px;
     }
 
     .cuadro_directo {
@@ -203,11 +210,8 @@
       background-color:#6346BA;
       width: 50px;
       height: 50px;
-      margin-right: 20px;
-      margin-left: 10px;
       display: inline-block;
       margin-top: 20px;
-
     }
     .i_Eventos{
       width: 50px;
@@ -249,18 +253,6 @@
     .tabla{
       width: 100%;
     }
-    .parrafo1{
-      margin-right: 10px;
-    }
-    .parrafo2{
-      margin-right: 10px;
-    }
-    .parrafo3{
-      margin-right: 10px;
-    }
-    .parrafo4{
-      margin-right: 10px;
-    }
     .footer{
       position: fixed;
       left: 0;
@@ -275,6 +267,15 @@
     }
     .G_en_vivo{
       position: absolute;
+    }
+    .alineador_b{
+      display: inline-block;
+      margin: 13px;
+    }
+    .alineador_p{
+      display: inline-block;
+      width: 85px;
+      margin: -4px;
     }
   </style>
 </head>
@@ -301,53 +302,57 @@
                 <label class="label1" for="Permiso-circulacion">Permiso de circulacion</label>
                 <hr>
                 <img class="i_cuadro_tramites" src="imagenes/coche.png" width="170px" height="170px" >
-                <a class="boton2" href="https://home.municipalidadgorbea.cl/archivos/3118">Pagar aqui</a>
+                <a class="boton_rojo" href="https://home.municipalidadgorbea.cl/archivos/3118">Pagar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
                 <label class="label1" for="Permiso-circulacion">Pago derechos de aseo</label>
                 <hr>
                 <img class="i_cuadro_tramites" src="imagenes/pago aseo.png" width="170px" height="170px">
-                <a class="boton2" href="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">Pagar aqui</a>
+                <a class="boton_rojo" href="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">Pagar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
                 <label class="label1" for="Permiso-circulacion">Tramites departamentos de obras</label>
                 <hr>
                 <img class="i_cuadro_tramites" src="imagenes/en-construccion.png" width="170px" height="170px">
-                <a class="boton2" href="https://mattgr05.github.io/Proyecto-app-muni/index4.html">Revisar aqui</a>
+                <a class="boton_rojo" href="https://mattgr05.github.io/Proyecto-app-muni/index4.html">Revisar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
                 <label class="label1" for="Permiso-circulacion">Registro social de hogares</label>
                 <hr>
                 <img class="i_cuadro_tramites" src="imagenes/registro social.png" width="170px" height="170px">
-                <a class="boton2" href="https://rsh.ministeriodesarrollosocial.gob.cl/portada">Revisar aqui</a>
+                <a class="boton_rojo" href="https://rsh.ministeriodesarrollosocial.gob.cl/portada">Revisar aqui</a>
             </div>
           </div>
         </div>
       </div>
-
       <div class="botones_circulos">
-        <table class="tabla">
-          <tr>
-            <td><a class="boton" href="https://mattgr05.github.io/Proyecto-app-muni/index5.html"><img class="i_Eventos" src="imagenes/ico eventos.png"></a></td>
-            <td><a class="boton" href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=e1c4b38162d39"><img class="i_solicitar_info" src="imagenes/ico solicitar info.png"></a></td>
-            <td><a class="boton" href="https://www.leylobby.gob.cl/instituciones/MU099"><img class="i_solicitar_audiencia" src="imagenes/ico solicitar audiencia.png"></a></td>
-            <td><a class="boton" href="https://mattgr05.github.io/Proyecto-app-muni/index3.html"><img class="i_conoce_losP" src="imagenes/ico conoce los programas.png"></a></td>
-          </tr>
-          <tr>
-            <td>
-              <p class="parrafo1">Eventos</p>
-            </td>
-            <td>
-              <p class="parrafo2">Solicitar informacion</p>
-            </td>
-            <td>
-              <p class="parrafo3">Solicitar audiencia</p>
-            </td>
-            <td>
-              <p class="parrafo4">Conoce los programas</p>
-            </td>
-          </tr>
-        </table>
+        <div class="alineador_b">
+          <a class="boton" href="https://mattgr05.github.io/Proyecto-app-muni/index5.html"><img class="i_Eventos" src="imagenes/ico eventos.png"></a>
+        </div>
+        <div class="alineador_b">
+          <a class="boton" href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=e1c4b38162d39"><img class="i_solicitar_info" src="imagenes/ico solicitar info.png"></a>
+        </div>
+        <div class="alineador_b">
+          <a class="boton" href="https://www.leylobby.gob.cl/instituciones/MU099"><img class="i_solicitar_audiencia" src="imagenes/ico solicitar audiencia.png"></a>
+        </div>
+        <div class="alineador_b">
+          <a class="boton" href="https://mattgr05.github.io/Proyecto-app-muni/index3.html"><img class="i_conoce_losP" src="imagenes/ico conoce los programas.png"></a>
+        </div>
+    </div>
+    <div class="contenedor_parrafos">
+        <div class="alineador_p">
+          <p><h5>Eventos<h5></p>
+        </div>
+        <div class="alineador_p">
+          <p><h5>Solicitar informacion<h5></p>
+        </div>
+        <div class="alineador_p">
+          <p><h5>Solicitar audiencia<h5></p>
+        </div>
+        <div class="alineador_p">
+          <p><h5>Conoce los programas<h5></p>
+        </div>
+    </div>
       </div>
       <div class="cuadro_directo">
         <h3 class="G_en_vivo">Gorbea en vivo:</h3>
