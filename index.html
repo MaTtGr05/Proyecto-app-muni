@@ -38,7 +38,6 @@
       max-height: auto;
       width: auto;
       display: flex;
-      overflow-x: auto;
     }
 
     .cuadro-permiso-circulacion {
@@ -47,11 +46,11 @@
       box-sizing: border-box;
       width: 280px;
       padding: 5px;
-      margin: 0px auto;
       border-radius: 10px;
       text-align: center;
       margin-right: 10px;
       margin-left: 10px;
+      color: black;
     }
 
     .boton_rojo {
@@ -66,53 +65,38 @@
       text-decoration: none;
     }
 
-    .label1 {
-      color: black;
-    }
-
     .btnEventos {
-      display: inline-block;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background: #6346BA;
-      position: absolute;
       top: 10px;
       left: -55px;
     }
 
     .btnSolicitarInfo {
-      position: absolute;
-      display: inline-block;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background: #6346BA;
-      position: absolute;
       top: 10px;
       left: 35px;
     }
 
     .btnAudiencia {
-      position: absolute;
-      display: inline-block;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background: #6346BA;
-      position: absolute;
       top: 10px;
       left: 130px;
     }
 
     .btnConocelosP {
-      position: absolute;
-      display: inline-block;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background: #6346BA;
-      position: absolute;
       top: 10px;
       left: 230px;
     }
@@ -127,8 +111,6 @@
     }
 
     .cuadro_directo {
-      position: absolute;
-      top: 800px;
       width: 100%;
     }
 
@@ -312,26 +294,25 @@
           <h4 class="tramitx">Selecciona el trámite que deseas:</h4>
           <div class="cuadro-scroll">
             <div class="cuadro-permiso-circulacion">
-              <label class="label1" for="Permiso-circulacion">Permiso de circulacion</label>
+              <label for="Permiso-circulacion">Permiso de circulacion</label>
               <hr>
               <img class="i_cuadro_tramites" src="imagenes/coche.png" width="170px" height="170px">
               <a class="boton_rojo" href="https://home.municipalidadgorbea.cl/archivos/3118">Pagar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
-              <label class="label1" for="Permiso-circulacion">Pago derechos de aseo</label>
+              <label for="Permiso-circulacion">Pago derechos de aseo</label>
               <hr>
               <img class="i_cuadro_tramites" src="imagenes/pago aseo.png" width="170px" height="170px">
-              <a class="boton_rojo"
-                href="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">Pagar aqui</a>
+              <a class="boton_rojo"href="https://www.sem.gob.cl/pago/buscar.php?pago_id=4&inst_id=69191200&setiframe=0">Pagar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
-              <label class="label1" for="Permiso-circulacion">Tramites departamentos de obras</label>
+              <label for="Permiso-circulacion">Tramites departamentos de obras</label>
               <hr>
               <img class="i_cuadro_tramites" src="imagenes/en-construccion.png" width="170px" height="170px">
               <a class="boton_rojo" href="https://mattgr05.github.io/Proyecto-app-muni/index4.html">Revisar aqui</a>
             </div>
             <div class="cuadro-permiso-circulacion">
-              <label class="label1" for="Permiso-circulacion">Registro social de hogares</label>
+              <label for="Permiso-circulacion">Registro social de hogares</label>
               <hr>
               <img class="i_cuadro_tramites" src="imagenes/registro social.png" width="170px" height="170px">
               <a class="boton_rojo" href="https://rsh.ministeriodesarrollosocial.gob.cl/portada">Revisar aqui</a>
