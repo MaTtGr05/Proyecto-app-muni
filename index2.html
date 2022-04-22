@@ -28,7 +28,7 @@
 
     input {
         background-color: #fbfbfb;
-        width: 408px;
+        width: 89%;
         height: 40px;
         border-radius: 5px;
         border-style: solid;
@@ -46,6 +46,7 @@
         border-style: solid;
         border-width: 1px;
         padding-top: 15px;
+        margin-top: 10px;
     }
 
     button {
@@ -86,12 +87,13 @@
         height: 100%;
     }
 
-    .input {
-        width: 88%;
-    }
     .logo_muni{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .input_Mensaje{
+        height: 250px;
+        resize: none;
     }
 </style>
 
@@ -124,11 +126,10 @@
                         placeholder="Escribe tu correo electronico">
                 </p>
                 <p>
-                    <label for="Mensaje">Mensaje
+                    <label class="Mensaje" for="Mensaje">Mensaje
                         <span class="obligatorio">*</span>
                     </label>
-                    <textarea name="mensaje" id="message" required="message"
-                        placeholder="Deja aquí tu comentario..."></textarea>
+                    <textarea class="input_Mensaje" name="mensaje" id="message" maxlength="400" required="message"></textarea>
                 </p>
                 <p>
                     <span class="obligatorio">*</span>Los campos son obligatorios
