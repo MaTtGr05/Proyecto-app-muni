@@ -41,12 +41,13 @@
     textarea {
         background-color: #fbfbfb;
         width: 90%;
-        height: 150px;
         border-radius: 5px;
         border-style: solid;
         border-width: 1px;
         padding-top: 15px;
         margin-top: 10px;
+        height: 200px;
+        resize: none;
     }
 
     button {
@@ -91,10 +92,6 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .input_Mensaje{
-        height: 250px;
-        resize: none;
-    }
 </style>
 
 <body>
@@ -129,11 +126,11 @@
                     <label class="Mensaje" for="Mensaje">Mensaje
                         <span class="obligatorio">*</span>
                     </label>
-                    <textarea class="input_Mensaje" name="mensaje" id="message" required="message" maxlength="350"
+                    <textarea name="mensaje" id="message" required="message" maxlength="350"
                     placeholder="Escriba aqui su mensaje..."></textarea>
                 </p>
                 <p>
-                    <span class="obligatorio">*</span>Los campos son obligatorios
+                    Los campos marcados con (<span class="obligatorio">*</span>) son obligatorios
                 </p>
                 <p>
                     <span class="obligatorio">Si ingresa su correo electrónico la respuesta será dirigida a
