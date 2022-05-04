@@ -15,7 +15,7 @@ $message .= "Teléfono de contacto: " . $phone . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'mati.bleach16@gmail.com';
+$para = 'fnicloux@municipalidadgorbea.cl';
 $asunto = 'Correo de prueba';
 
 if(mail($name,$mail,$phone,$message))
